@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:gravity="center|top"
+    android:minHeight="380dp"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="7dp"
+            android:gravity="center|top"
+            android:text="@string/customer_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <!--
+         <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginBottom="10dip" />
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/username"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:typeface="serif" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_style"
+            android:inputType="textFilter"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="@color/Black" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:typeface="serif" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_customer"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_style"
+            android:inputType="textFilter"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="@color/Black" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/chk_rem_me"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rem_me"
+            android:textColor="@color/Black"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_customer_submit"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_style"
+        android:text="Continue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </Button>
+
+</LinearLayout>

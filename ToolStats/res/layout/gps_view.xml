@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent" 
+    android:id="@+id/RelativeLayout1"    
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+<ScrollView
+              android:id="@+id/scrollView1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:orientation="vertical" >
+                                      
+          <TextView
+              android:id="@+id/TextView01"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Address"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:layout_gravity="center"
+              android:textColor="@color/Black" />
+
+          <EditText
+              android:id="@+id/txtAddy1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPostalAddress" />
+
+          <EditText
+              android:id="@+id/txtAddy2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPostalAddress" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="City"
+              android:layout_gravity="center"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="@color/Black" />
+
+          <EditText
+              android:id="@+id/txtCity"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10" />
+          
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="State"
+              android:layout_gravity="center"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="@color/Black" />
+
+          <EditText
+              android:id="@+id/txtState"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10" />
+
+          <TextView
+              android:id="@+id/TextView02"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="Country"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="@color/Black" />
+
+          <Spinner
+              android:id="@+id/spnCountries"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:entries="@array/countries" />
+
+          <TextView
+              android:id="@+id/TextView03"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Zip or Postal  Code"
+              android:layout_gravity="center"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="@color/Black" />
+
+          <EditText
+              android:id="@+id/txtZip"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10" />
+          
+          <TextView
+              android:id="@+id/TextView04"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Comments"
+              android:layout_gravity="center"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="@color/Black" />
+
+          <EditText
+              android:id="@+id/txtComments"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:ems="10"
+              android:inputType="textMultiLine" 
+              android:lines="5"
+              />
+
+          <Button android:id="@+id/sendGPS"
+                style="@style/ButtonText"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:text="Upload GPS Info"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+          
+          
+
+      </LinearLayout>
+</ScrollView>
+</RelativeLayout>

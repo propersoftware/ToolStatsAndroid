@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_title_name" translatable="false">Tool Stats</string>
+        <string name="app_title_name_2b" translatable="false">Tool Stats 2B</string>
+    <string name="rescan" translatable="false">Scan</string>
+     <string name="email" translatable="false">Send Email</string>
+      <string name="webapp" translatable="false">View Project</string>
+       <string name="moldvalue" translatable="false">QR code value: </string>
+       <string name="history" translatable="false">History</string>
+       <string name="copy" translatable="false">Copy URL to Clipboard</string>
+         <string name="check_in" translatable="false">Check In</string>
+           <string name="check_out" translatable="false">Check Out</string>
+        <string name="mock_caption" translatable="false">Welcome to ToolStats,\nScan your subject barcode\nto access the data base</string>
+       <string name="mock_caption_ls" translatable="false">Welcome to ToolStats,\nScan your subject barcode to access the data base</string>
+       <string name="username" translatable="false">User Name</string>
+       <string name="customer_name" translatable="false">Company Name</string>
+       <string name="customer_title" translatable="false">Customer Login</string>
+       <string name="recent_scan" translatable="false">Recent Scans</string>
+         <string name="tm_projno" translatable="false">Toolmaker Project#</string>
+          <string name="pro_tool" translatable="false">Production Tool#</string>
+          <string name="rem_me" translatable="false">Remember me</string>
+          <string name="cont" translatable="false">Continue</string>
+          <string name="notes" translatable="false">Note: If you do not know the Project#, you can logon with Production Tool#.</string>
+          <string name="shop_name" translatable="false">Shop Name</string>
+          <string name="comments" translatable="false">Comments</string>
+          <string name="submit" translatable="false">Submit</string>
+          <string name="chkin_time" translatable="false">Check In Time</string>
+          <string name="gps">Send GPS Information</string>
+          
+          
+</resources>

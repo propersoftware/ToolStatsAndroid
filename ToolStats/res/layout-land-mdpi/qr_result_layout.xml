@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <!--
+         <ListView android:id="@+id/lv_webapp_category" android:layout_height="wrap_content" 
+		android:layout_width="match_parent" android:layout_gravity="center" android:visibility="gone"> 
+		</ListView> Preview: listitem=@android:layout/simple_list_item_single_choice
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textStyle="bold" >
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textStyle="bold" >
+
+                <TextView
+                    android:id="@+id/tv_tm_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/tm_projno"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/Black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv_proj_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/tm_projno"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/Black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/btn_webapp"
+                    style="@style/ButtonText"
+                    android:layout_width="251dip"
+                    android:layout_height="73dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/button_style"
+                    android:drawableLeft="@drawable/web_icon"
+                    android:gravity="center"
+                    android:text="@string/webapp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+				<Button
+	                android:id="@+id/btn_gps"
+	                style="@style/ButtonText"
+	                android:layout_width="251dip"
+	                android:layout_height="73dip"
+	                android:layout_marginBottom="10dip"
+	                android:background="@drawable/button_style"
+	                android:drawableLeft="@drawable/gps"
+	                android:gravity="center"
+	                android:text="@string/gps"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textSize="16dp"
+	                android:textStyle="bold"
+	                android:typeface="serif" />
+				
+                <Button
+                    android:id="@+id/btn_copy"
+                    style="@style/ButtonText"
+                    android:layout_width="251dip"
+                    android:layout_height="73dip"
+                    android:layout_marginBottom="10dip"
+                    android:background="@drawable/button_style"
+                    android:drawableLeft="@drawable/copy_icon"
+                    android:gravity="center"
+                    android:text="@string/copy"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/btn_checkio"
+                    style="@style/ButtonText"
+                    android:layout_width="251dip"
+                    android:layout_height="73dip"
+                    android:background="@drawable/button_style"
+                    android:drawableLeft="@drawable/checkin"
+                    android:gravity="center"
+                    android:text="@string/check_in"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!--
+         <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" 
+		android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center"> 
+		<Button android:text="@string/email" android:background="@drawable/button_style" 
+		android:id="@+id/btn_email" android:layout_height="95dip" android:layout_width="95dip" 
+		style="@style/ButtonText" android:layout_marginBottom="10dip" android:drawableTop="@drawable/email_icon" 
+		android:gravity="center_horizontal"></Button> <Button android:layout_height="95dip" 
+		android:background="@drawable/button_style" android:layout_width="95dip" 
+		style="@style/ButtonText" android:id="@+id/btn_scan" android:layout_marginLeft="10dip" 
+		android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btn_copy" 
+		android:layout_marginBottom="10dip" android:text="@string/history" android:drawableTop="@drawable/history_icon" 
+		android:gravity="center_horizontal"></Button> <Button android:layout_height="95dip" 
+		android:text="@string/webapp" android:background="@drawable/button_style" 
+		android:layout_width="95dip" style="@style/ButtonText" android:id="@+id/btn_webapp" 
+		android:layout_below="@+id/btn_scan" android:layout_alignLeft="@+id/btn_scan" 
+		android:drawableTop="@drawable/web_icon" android:gravity="center_horizontal"></Button> 
+		<Button android:layout_height="95dip" android:text="Copy" android:background="@drawable/button_style" 
+		android:layout_width="95dip" style="@style/ButtonText" android:id="@+id/btn_copy" 
+		android:layout_alignTop="@+id/btn_webapp" android:layout_alignLeft="@+id/btn_email" 
+		android:drawableTop="@drawable/copy_icon" android:gravity="center_horizontal"></Button> 
+		</RelativeLayout>
+    -->
+
+</RelativeLayout>

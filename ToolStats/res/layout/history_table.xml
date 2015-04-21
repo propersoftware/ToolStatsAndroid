@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:scrollbars="horizontal|vertical" >
+
+    <TextView
+        android:id="@+id/history_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Recent Scans"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:visibility="gone" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_recent_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        android:gravity="center"
+        android:text="@string/recent_scan"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/history_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!--
+                 <Button android:gravity="center" android:layout_gravity="center" 
+				android:text="project number" android:layout_width="200dp" android:background="@drawable/round_border" 
+				android:id="@+id/btn_project_no1" android:layout_height="60dp" android:layout_margin="5dp" 
+				android:visibility="invisible"></Button> <Button android:gravity="center" 
+				android:layout_gravity="center" android:text="project number" android:layout_width="200dp" 
+				android:background="@drawable/round_border" android:id="@+id/btn_project_no2" 
+				android:layout_height="60dp" android:layout_margin="5dp" android:visibility="invisible"></Button> 
+				<Button android:gravity="center" android:layout_gravity="center" android:text="project 
+				number" android:layout_width="200dp" android:background="@drawable/round_border" 
+				android:id="@+id/btn_project_no3" android:layout_height="60dp" android:layout_margin="5dp" 
+				android:visibility="invisible"></Button> <Button android:gravity="center" 
+				android:layout_gravity="center" android:text="project number" android:layout_width="200dp" 
+				android:background="@drawable/round_border" android:id="@+id/btn_project_no4" 
+				android:layout_height="60dp" android:layout_margin="5dp" android:visibility="invisible"></Button> 
+				<Button android:gravity="center" android:layout_gravity="center" android:text="project 
+				number" android:layout_width="200dp" android:background="@drawable/round_border" 
+				android:id="@+id/btn_project_no5" android:layout_height="60dp" android:visibility="invisible" 
+				android:layout_margin="5dp"></Button>
+            -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+         <HorizontalScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" 
+		android:scrollbars="horizontal|vertical" android:layout_height="match_parent" 
+		android:background="@color/White"> <LinearLayout android:id="@+id/linearLayout1" 
+		android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" 
+		android:scrollbars="horizontal|vertical"> <TableRow android:layout_width="match_parent" 
+		android:layout_height="wrap_content"> <TextView android:textAppearance="?android:attr/textAppearanceLarge" 
+		android:text="Barcode Scan History" android:layout_height="wrap_content" 
+		android:id="@+id/textView1" android:textColor="@color/White" android:textStyle="bold" 
+		android:layout_width="match_parent" android:gravity="center" android:textSize="16dp" 
+		android:background="@color/MidnightBlue" /> </TableRow> <TableLayout android:id="@+id/tabla_cuerpo" 
+		android:layout_height="match_parent" android:layout_width="match_parent" 
+		android:scrollbars="horizontal|vertical"> <TableRow android:id="@+id/tableRow" 
+		android:layout_width="match_parent" android:layout_height="wrap_content" 
+		android:background="@color/SteelBlue"> <TextView android:background="@drawable/cell_shape" 
+		android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Project#" 
+		android:textColor="@color/Black" android:textStyle="bold" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell2" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Customer 
+		name" android:textColor="@color/Black" android:textStyle="bold" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Program 
+		name" android:textColor="@color/Black" android:textStyle="bold" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell4" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Part#" 
+		android:textColor="@color/Black" android:textStyle="bold" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell5" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Part 
+		name" android:textColor="@color/Black" android:textStyle="bold" android:textSize="15dp"></TextView> 
+		</TableRow> <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:background="@color/Lavender"> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Customer 
+		Name" android:textColor="@color/Blue" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell2" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Prgram 
+		Name" android:textColor="@color/Black" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell3" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Part 
+		Number" android:textColor="@color/Black" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell4" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Part 
+		Name" android:textColor="@color/Black" android:textSize="15dp"></TextView> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell5" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="Description" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> </TableRow> 
+		<TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:visibility="visible" android:background="@color/LightSteelBlue"> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Blue" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell2" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell3" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell4" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell5" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> </TableRow> 
+		<TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:visibility="visible" android:background="@color/Lavender"> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Blue" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell2" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell3" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell4" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell5" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> </TableRow> 
+		<TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:visibility="visible" android:background="@color/LightSteelBlue"> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Blue" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell2" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell3" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell4" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell5" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> </TableRow> 
+		<TableRow android:id="@+id/tableRow5" android:layout_width="match_parent" 
+		android:layout_height="wrap_content" android:visibility="visible" android:background="@color/Lavender"> 
+		<TextView android:background="@drawable/cell_shape" android:padding="5dp" 
+		android:id="@+id/cell1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Blue" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell2" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell3" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell4" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> <TextView 
+		android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/cell5" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" 
+		android:textColor="@color/Black" android:textSize="15dp"></TextView> </TableRow> 
+		</TableLayout> </LinearLayout> </HorizontalScrollView>
+    -->
+
+</LinearLayout>

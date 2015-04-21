@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:gravity="center|top"
+    android:minHeight="380dp"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_checkio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="7dp"
+            android:gravity="center|top"
+            android:text="@string/check_in"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <!--
+         <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginBottom="10dip" />
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/shop_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:typeface="serif" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_shop_name"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_style"
+            android:inputType="textFilter"
+            android:padding="7dp"
+            android:textColor="@color/Black" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chkin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/chkin_time"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:typeface="serif" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_chkin_time"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_style"
+            android:editable="false"
+            android:inputType="textFilter"
+            android:padding="7dp"
+            android:textColor="@color/Black" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:typeface="serif" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_comments"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_style"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="7dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/Black" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_style"
+        android:text="@string/submit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </Button>
+
+</LinearLayout>

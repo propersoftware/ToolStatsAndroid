@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@color/transparent"
+	android:minWidth="400dp" android:minHeight="300dp"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:layout_gravity="center" android:gravity="center">
+	<Button android:id="@+id/btn_general_info" android:layout_width="251dp"
+		android:layout_height="58dp" android:text="General Info"
+		android:background="@drawable/button_style" android:typeface="serif"
+		android:textSize="16dp" android:layout_marginBottom="5dp"
+		android:drawableLeft="@drawable/generalinfo" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"></Button>
+	<Button android:background="@drawable/button_style"
+		android:typeface="serif" android:layout_marginBottom="5dp"
+		android:id="@+id/btn_tool_setup" android:layout_width="251dp"
+		android:textSize="16dp" android:layout_height="58dp"
+		android:drawableLeft="@drawable/toolsetup" android:text="Tool Setup"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"></Button>
+	<Button android:typeface="serif" android:layout_height="58dp"
+		android:background="@drawable/button_style" android:layout_width="251dp"
+		android:textSize="16dp" android:drawableLeft="@drawable/tooldesigninfo"
+		android:text="Tool Design Info" android:layout_marginBottom="5dp"
+		android:id="@+id/btn_tool_design_info" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"></Button>
+	<Button android:background="@drawable/button_style" android:id="@+id/btn_tool_maintenance"
+		android:layout_width="251dp" android:textSize="16dp" android:drawableLeft="@drawable/toolmaintenance"
+		android:typeface="serif" android:text="Tool Maintenance"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold" android:layout_height="58dp"></Button>
+
+
+</LinearLayout>
