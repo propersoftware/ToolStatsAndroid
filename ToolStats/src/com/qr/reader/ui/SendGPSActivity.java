@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,12 +14,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.qr.reader.gpsServices.AddressServices;
-import com.qr.reader.gpsServices.GPSTracker;
 import com.qr.reader.services.HttpJsonService;
 import com.qr.reader.utils.GpsScanInfoModel;
 import com.qr.reader.utils.MoldDetails;
-import com.qr.reader.utils.PhoneUtilities;
 
 
 public class SendGPSActivity extends Activity {
@@ -28,7 +25,6 @@ public class SendGPSActivity extends Activity {
 	private final String jsonFunction = "Json/PostGpsDataAndroid";
 	private final int TEMP_DIALOG = 0;
 	private GpsScanInfoModel originalGpsScan;
-	private PhoneUtilities Inets;
 	protected android.app.Dialog onCreateDialog(int id) 
 	{
 		
@@ -80,11 +76,6 @@ public class SendGPSActivity extends Activity {
 			
 			sendGpsScanModel.setCountry(spnCountries.getSelectedItem().toString().substring(0,2));
 			
-//			sendGpsScanModel.setUserName(originalGpsScan.getUserName());
-//			sendGpsScanModel.setUserName(originalGpsScan.getUserName());
-//			sendGpsScanModel.setUserName(originalGpsScan.getUserName());
-//			sendGpsScanModel.setUserName(originalGpsScan.getUserName());
-			
 			sendGpsScanModel.setIsManualEntry(sendGpsScanModel.equals(originalGpsScan));
 			HttpJsonService httpService = new HttpJsonService(sendGpsScanModel);
 			
@@ -111,10 +102,6 @@ public class SendGPSActivity extends Activity {
 		setContentView(R.layout.gps_view);
 		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
 				R.layout.title_label);
-		//TextView textView = new TextView(this);
-		//textView.setText("Some Help Text");
-		//this.setContentView(textView);
-		Inets = new PhoneUtilities(this);
 		
 		Button btnSendGpsClick = (Button) findViewById(R.id.sendGPS);
 		btnSendGpsClick.setOnClickListener(sendGpsClick);
@@ -178,8 +165,6 @@ public class SendGPSActivity extends Activity {
 		EditText txtZip = getEditTextById(R.id.txtZip); 
 		EditText txtState = getEditTextById(R.id.txtState); 
 		Spinner spnCountries = getSpinnerById(R.id.spnCountries);
-		EditText txtComments = getEditTextById(R.id.txtComments); 
-		
 		
 		setEditTextString(txtAddy1, originalGpsScan.getStreetAddress1());
 		setEditTextString(txtAddy2, originalGpsScan.getStreetAddress2());
@@ -189,14 +174,7 @@ public class SendGPSActivity extends Activity {
 
 		
 		setCountrySpinner(spnCountries, originalGpsScan.getCountry());
-		
-//		txtAddy1.setText(originalGpsScan.getStreetAddress1());
-//		txtAddy2.setText(originalGpsScan.getStreetAddress2());
-//		txtCity.setText(originalGpsScan.getCity());
-//		txtZip.setText(originalGpsScan.getZipCode());
-//		txtState.setText(originalGpsScan.getStateProvince());
-//		txtAddy1.setText(originalGpsScan.getStreetAddress1());
-		
+			
 		
 	}
 	

@@ -27,74 +27,17 @@ public class QRReaderActivity extends Activity {
 	private OnClickListener tempButtonClick = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
-//			GPSTracker gpsTracker = new GPSTracker(v.getContext());
-//			if(gpsTracker.getLocation() == null)
-//			{
-//				gpsTracker.showSettingsAlert();
-//			}
-//			if(gpsTracker.getLocation() == null)
-//			{
-//				return;
-//			}
-//			GpsScanInfoModel gpsScanModel = new GpsScanInfoModel();
-//			AddressServices addServices = new AddressServices(v.getContext());
-//			String Address = addServices.getCompleteAddressString(gpsTracker.getLatitude(), gpsTracker.getLongitude());
-//			gpsScanModel.setLat(gpsTracker.getLatitude());
-//			gpsScanModel.setLong(gpsTracker.getLongitude());
-//			
-//			gpsScanModel.setCity(addServices.getCity());
-//			gpsScanModel.setCountry(addServices.getCountryCode());
-//			gpsScanModel.setLat(addServices.getLatitude());
-//			gpsScanModel.setLong(addServices.getLongitude());
-//			gpsScanModel.setStateProvince(addServices.getState());
-//			gpsScanModel.setStreetAddress1(addServices.getAddress1());
-//			gpsScanModel.setStreetAddress2(addServices.getAddress2());
-//			gpsScanModel.setZipCode(addServices.getZip());
-//			gpsScanModel.setProjectNo("41392");
-//			gpsScanModel.setCompanyName("Electrolux");
-//			gpsScanModel.setUserName("Mike Taulbee");
-//
-			//Intent intent = new Intent(this, ResultActivity.class);
 			moldDetails = (MoldDetails) getApplication();
 			moldDetails.setResult("http://toolstatsinfo.com/CustomerInfo/Index?ProjectNo=14079&ProductionToolNo=");
 			moldDetails.setScanned(true);
 			moldDetails.setMoldHistoryCount(-1);
-			
-			
-			
 			Intent gpsIntent = new Intent(v.getContext(), ResultActivity.class);
-//			
-//			
-//			
-//			MoldDetails moldDetails = MoldDetails.getInstance();
-//			moldDetails.setGpsScanInfoModel(gpsScanModel);
 			startActivity(gpsIntent);
 			finish();
 			
 		}
 	};
-	
-//	private OnClickListener latLongButtonClick = new OnClickListener() {
-//		@Override
-//		public void onClick(View v) {
-//
-//			GPSTracker GP = new GPSTracker(v.getContext());
-//			if(!GP.canGetLocation())
-//			{
-//				GP.showSettingsAlert();
-//				if(!GP.canGetLocation())
-//				{
-//					return;
-//				}
-//			}
-//			UserLoginForGps userLogin = new UserLoginForGps(v.getContext());
-//			userLogin.showUserLoginScreen();
-////			sendInfo();
-////			Intent gpsIntent = new Intent(QRReaderActivity.this, ShowLocationByLatLongActivity.class);
-////			startActivity(gpsIntent);
-//		}
-//	};
-	
+		
 	protected android.app.Dialog onCreateDialog(int id) 
 	{
 		
@@ -144,14 +87,6 @@ public class QRReaderActivity extends Activity {
 		Button btnRecentScan = (Button) findViewById(R.id.btn_recent_scan);
 		Button btnHomeWebApp = (Button) findViewById(R.id.btn_home_webapp);
 		
-//		Button btnTempClick = (Button) findViewById(R.id.tempClick);
-//		btnTempClick.setOnClickListener(tempButtonClick);
-//		
-//		Button btnLatLongClick = (Button) findViewById(R.id.tempLatLong);
-//		
-//		registerForContextMenu(btnTempClick);
-//		btnLatLongClick.setOnClickListener(latLongButtonClick);
-
 		btnScan.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
@@ -231,41 +166,4 @@ public class QRReaderActivity extends Activity {
 		}
 		return super.onKeyUp(keyCode, event);
 	}
-	
-//	@Override
-//	public boolean onCreateOptionsMenu(Menu menu) {
-//		//return super.onCreateOptionsMenu(menu);
-//		
-//		MenuInflater menuInflater = getMenuInflater();
-//		
-//		menuInflater.inflate(R.menu.main_menu, menu);
-//		
-//		return true;
-//		
-//	}
-//	
-//	@Override
-//	public boolean onOptionsItemSelected(MenuItem item) {
-//	
-//		//return super.onOptionsItemSelected(item);
-//		
-//		switch(item.getItemId())
-//		{
-//			case R.id.settingsMenuItem:
-//				//Intent intent = new Intent(QRReaderActivity.this, QR)
-//			default:
-//		
-//		}
-//		
-//		return true;
-//	}
-//	
-//	@Override
-//	public void onCreateContextMenu(ContextMenu menu, View v,
-//			ContextMenuInfo menuInfo) {
-//		// TODO Auto-generated method stub
-//		super.onCreateContextMenu(menu, v, menuInfo);
-//		MenuInflater menuInflater = getMenuInflater();
-//		menuInflater.inflate(R.menu.context_menu, menu);
-//	}
 }

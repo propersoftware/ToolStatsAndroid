@@ -22,11 +22,6 @@ public class ShowLocationByLatLongActivity  extends Activity {
 		TextView myLatitude = (TextView)findViewById(R.id.mylatitude);
 		TextView myLongitude = (TextView)findViewById(R.id.mylongitude);
 		TextView myAddress = (TextView)findViewById(R.id.myaddress);
-//		
-//		myAddress.setText(AS.getCompleteAddressString(Lat, Lon));
-//		
-//		myLatitude.setText("Latitude: " + String.valueOf(Lat));
-//		myLongitude.setText("Longitude: " + String.valueOf(Lon));
 		
  	}
 }

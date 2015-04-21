@@ -149,7 +149,7 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
     ambientLightManager = new AmbientLightManager(this);
 
     PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-
+    
     showHelpOnFirstLaunch();
   }
 
@@ -192,7 +192,7 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
     inactivityTimer.onResume();
 
     Intent intent = getIntent();
-
+    
     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
     copyToClipboard = prefs.getBoolean(PreferencesActivity.KEY_COPY_TO_CLIPBOARD, true)
         && (intent == null || intent.getBooleanExtra(Intents.Scan.SAVE_HISTORY, true));
